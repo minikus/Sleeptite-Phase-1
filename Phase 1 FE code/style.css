@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "geogrotesque-medium";
+    src: url("/assets/fonts/geogrotesque/Geogrotesque-Medium.otf");
+}
+
+@font-face {
+    font-family: "geogrotesque-light";
+    src: url("/assets/fonts/geogrotesque/Geogrotesque-Light.otf");
+}
+
+html {
+  font-family: geogrotesque-medium;
+  color: white;
+}
+
+
+.container {
+  height: 1600px;
+  width: 2560px;
+  background-color: #0F3253;
+  margin: 0 auto;
+  padding: 130px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logo {
+  width: 380px;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wifi {
+  justify-content: space-around;
+}
+
+.card {
+  margin-top: 80px;
+  background-color: #F26657;
+  height: 377px;
+  width: 714px;
+  border-radius: 8px;
+  padding: 55px;
+  color:#0F3253;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.copyright-container{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright {
+  font-weight: 200;
+  color: #4576A4;
+  font-size: 30px;
+  font-family: "geogrotesque-light";
+  position: absolute;
+  bottom: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  font-size: 30px;
+  font-family: geogrotesque-light;
+  text-align: right;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.axis, .x-axis-value, .y-axis-value {
+  font-size: 27px;
+  position: absolute;
+}
+
+.y-axis-value, .x-axis-value {
+  font-family: geogrotesque-light;
+}
+
+.x-axis-title {
+  bottom: -120px;
+  left: 44%;
+}
+
+.x-axis-value {
+  bottom: -55px;
+}
+
+.y-axis-value {
+  position: absolute;
+  bottom: 100px;
+  right: 1060px;
+}
+
+.y-axis-title {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  bottom: 43%;
+  left: -145px;
+}
+
+.graph-container {
+  position: relative;
+}
+
+.bar-graphs {
+  position: absolute;
+}
+
+.graph {
+  background-color: #51CEFF;
+  position: absolute;
+  bottom: 8px;
+  width: 87px;
+}
+
+/* Height of graphs 1-6 will be dynamic */
+.graph-1 {
+  height: 240px;
+  left: 84px;
+}
+
+.graph-2 {
+  height: 260px;
+  left:  257px;
+}
+
+.graph-3 {
+  height: 370px;
+  left: 430px;
+}
+
+.graph-4 {
+  height: 390px;
+  left: 602px;
+}
+
+.graph-5 {
+  height: 190px;
+  left: 775px;
+}
+
+.graph-6 {
+  height: 380px;
+  left: 948px;
+}
+
+.y-1 {
+
+}
+
+.y-2 {
+  bottom: 198px;
+}
+
+.y-3 {
+ bottom: 306px;
+}
+
+.y-4 {
+  bottom: 412px;
+}
+
+.y-5 {
+  bottom: 516px;
+}
+
+.y-6 {
+  bottom: 620px;
+}
+
+
+/* Analytics page */
+
+.main.analytics {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.bed-sensors {
+  width: 540px;
+  height: 272px;
+  background-color: #F26657;
+  margin: 0 26px 26px 0;
+  box-sizing: border-box;
+  font-size: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  display:flex;
+
+}
+
+.analytic-graphs {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.analytic-graphs img {
+  margin-bottom: 2px;
+  height: 80px;
+  width: 1065px;
+}
+
+.analytic-graphs h4 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.small-graphs-container {
+  font-family: "geogrotesque-light";
+  margin-bottom: 8px;
+}
+
+.small-graph-inner {
+    position: relative;
+}
+
+.small-bar-graphs {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.small-graph {
+  background-color: #51CEFF;
+  width: 70px;
+}
+
+.small-graph-1 {
+  height: 10px;
+}
+
+.small-graph-2 {
+  height: 50px;
+}
+
+.small-graph-3 {
+  height: 33px;
+}
+
+.small-graph-4 {
+  height: 25px;
+}
+
+.small-graph-5 {
+  height: 50px;
+}
+
+.small-graph-6 {
+  height: 50px;
+}
+
+.small-graph-7 {
+  height: 70px;
+}
+
+.small-graph-8 {
+  height: 30px;
+}
+
+
+.small-x-axis {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 65px;
+}
+
+.small-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+
+.room-environment-header {
+  margin-top: 20px;
+}
+
+.room-environment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-sensor {
+  width: 317px;
+  height: 165px;
+  background-color: grey;
+}
+
+.room-temp-title {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14px;
+  font-size: 26px;
+  font-family: "geogrotesque-light";
+
+}
+
+.reset-session, .download-csv {
+  width: 317px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 26px;
+  border-radius: 13px;
+}
+
+.reset-session:hover, .download-csv:hover, button:hover, .card:hover{
+  cursor: pointer;
+}
+
+.reset-session {
+  background-color: #535353;
+  margin-bottom: 20px;
+}
+
+.download-csv {
+  background-color: #F26657;
+}
+
+.wifi-page .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wifi-page .column {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+input, select, .submit button{
+  height: 50px;
+  border-radius: 3px;
+}
+
+select {
+  width: 100%;
+  height: 55px;
+  font-size: 28px;
+}
+
+option {
+  margin-left: 10px;
+}
+
+.wifi-page h4 {
+  margin-top: 38px;
+}
+
+.wifi-page h3 {
+  margin: 120px 0 0 0;
+}
+
+.wifi-page h3 span {
+  font-family: "geogrotesque-light";
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit button {
+  width: 22%;
+  margin-top: 140px;
+  color: white;
+  background-color: #F26657;
+  border: none;
+  height: 60px;
+  font-size: 30px;
+  font-family: "geogrotesque-medium";
+}
